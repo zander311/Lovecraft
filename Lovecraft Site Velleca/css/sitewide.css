@@ -1,0 +1,299 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/*
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+}
+
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area.
+	If you have more than one container, you are probably doing
+	something wrong.
+*/
+.container {
+	padding: 1em;
+	background-color: #F0F0F0;
+}
+
+.homepage {
+	display: grid;
+	grid-template-rows:1fr;
+background-image: url("../img/HPLovecraft.jpg");
+}
+
+
+.Books{
+	display: grid;
+	grid-column: 1fr 1fr 1fr 1fr 1fr
+}
+
+.Cthulu-Cover{
+	grid-column:4/5;
+	grid-row: 1/5;
+}
+
+.Cthulu-Title{
+	grid-column: 1;
+	grid-row: 1;
+	font-family: "Righteous"
+}
+
+.Cthulu-Info{
+	grid-column: 1/2;
+	grid-row: 2;
+}
+
+.Lurking-Fear-Title{
+	grid-column: 1;
+	grid-row: 7;
+}
+
+.Lurking-Fear-Info{
+	grid-column: 1/2;
+	grid-row:8;
+}
+
+.Shadow-Title{
+	grid-column: 1;
+	grid-row: 10;
+}
+
+.Shadow-Info{
+	grid-column: 1/2;
+	grid-row: 11;
+}
+
+.Dunwich-Cover{
+	grid-column: 4/5;
+	grid-row: 14/18
+}
+
+.Dunwich-Title{
+	grid-column: 1;
+	grid-row: 14;
+}
+
+.Dunwich-Info{
+	grid-column: 1/2;
+	grid-row:15;
+}
+
+.Whisper-Title{
+	grid-column: 1;
+	grid-row: 18;
+}
+
+.Whisper-Info{
+	grid-column: 1/2;
+	grid-row: 19;
+}
+
+.White-Ship-Title{
+	grid-column: 1;
+	grid-row: 21;
+}
+
+.White-Ship-Info{
+	grid-column: 1/2;
+	grid-row: 22;
+}
+
+.Dagon-Cover{
+	grid-column: 4/5;
+	grid-row: 25/29;
+}
+
+.Dagon-Title{
+	grid-column: 1;
+	grid-row: 25;
+}
+
+.Dagon-Info{
+	grid-column: 1/2;
+	grid-row: 26;
+}
+
+.Rats-Title{
+	grid-column: 1;
+	grid-row: 29;
+}
+
+.Rats-Info{
+	grid-column: 1/2;
+	grid-row: 30;
+}
+
+.Doorstep-Title{
+	grid-column: 1;
+	grid-row: 32;
+}
+
+.Doorstep-Info{
+	grid-column: 1/2;
+	grid-row: 33;
+}
+
+.Dexter-Cover{
+	grid-column: 4/5;
+	grid-row: 36/40;
+}
+
+.Dexter-Title{
+	grid-column: 1;
+	grid-row: 36;
+}
+
+.Dexter-Info{
+	grid-column: 1/2;
+	grid-row: 37;
+}
+
+.Witch-Title{
+	grid-column: 1;
+	grid-row: 40;
+}
+
+.Witch-Info{
+	grid-column: 1/2;
+	grid-row: 41;
+}
+
+.Cool-Air-Title {
+	grid-column: 1;
+	grid-row: 43;
+}
+
+.Cool-Air-Info{
+	grid-column: 1/2;
+	grid-row:44;
+}
+
+.Mt-Madness-Cover{
+	grid-column:4/5;
+	grid-row:47/51;
+}
+
+.Mt-Madness-Title{
+	grid-column: 1;
+	grid-row: 47;
+}
+
+.Mt-Madness-Info{
+	grid-column: 1/2;
+	grid-row: 48;
+}
+
+.Outsider-Title{
+	grid-column: 1;
+	grid-row: 54;
+}
+
+.Outsider-Info{
+	grid-column: 1/2;
+	grid-row: 55;
+}
+
+.Music-Title{
+	grid-column: 1;
+	grid-row: 58;
+}
+
+.Music-Info{
+grid-column: 1/2;
+grid-row: 59;
+}
+
+.Space-Cover{
+	grid-column: 4/5;
+	grid-row: 62/66
+}
+
+.Space-Title{
+	grid-column: 1;
+	grid-row: 62;
+}
+
+.Space-Info{
+	grid-column: 1/2;
+	grid-row: 63;
+}
+
+.He-Title{
+	grid-column: 1;
+	grid-row: 69;
+}
+
+.He-Info{
+	grid-column: 1/2;
+	grid-row: 70;
+}
+
+.Sleep-Title{
+	grid-column: 1;
+	grid-row: 72;
+}
+
+.Sleep-Info{
+	grid-column: 1/2;
+	grid-row: 73;
+}
+
+.Inssmouth-Cover{
+	grid-column: 4/5;
+	grid-row: 76/82;
+}
+
+.Innsmouth-Title{
+	grid-column: 1;
+	grid-row: 76;
+}
+
+.Innsmouth-Info{
+	grid-column: 1/2;
+	grid-row: 77;
+}
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+
+	/* container on larger screens */
+	.container {
+		width: 90%;
+		max-width: 1200px;
+		margin: 2em;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 2em;
+		border: 1px solid #ddd;
+	}
+
+} /* end media query */
